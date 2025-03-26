@@ -11,25 +11,19 @@
 #### Base Class: Character
 - The Character class serves as the foundation for all other character types. It should include:
 
-Properties:
+## Properties:
+- string name - The name of the character.
+- int health - The health points of the character.
+- int attack - The attack value of the character.
+- int defense - The defense value of the character.
 
-string name - The name of the character.
+## Constructor:
+- Initializes the name, health, attack, and defense properties.
 
-int health - The health points of the character.
+## Methods:
+- virtual void Attack(Character target)
 
-int attack - The attack value of the character.
-
-int defense - The defense value of the character.
-
-Constructor:
-
-Initializes the name, health, attack, and defense properties.
-
-Methods:
-
-virtual void Attack(Character target)
-
-Calculates the damage dealt to the target character using the formula:
+- Calculates the damage dealt to the target character using the formula:
 damage = attack - target.defense.
 
 If damage > 0: Decreases the target's health by the calculated damage and prints:
@@ -45,8 +39,8 @@ Prints:
 
 
 
-Derived Classes
-You will create three derived classes from Character: Warrior, Mage, and Dragon. Each class will add unique behavior.
+#### Derived Classes
+- You will create three derived classes from Character: Warrior, Mage, and Dragon. Each class will add unique behavior.
 
 1. Class: Warrior
 The Warrior represents a strong melee fighter.
